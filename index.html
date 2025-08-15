@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayn Rand (RAND) — Solana Token</title>
+  <meta name="description" content="RAND is a community token on Solana inspired by Ayn Rand’s philosophy of freedom, voluntary exchange, and rational self-interest." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#111a2e; --muted:#8aa3c7; --text:#ebf2ff; --accent:#67e8f9; --line:#1b2846;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{max-width:980px;margin:0 auto;padding:32px 20px 64px}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+    header img{width:72px;height:72px;border-radius:16px;object-fit:cover;border:1px solid var(--line)}
+    h1{font-size:28px;line-height:1.1;margin:0}
+    .ticker{display:inline-block;margin-left:10px;padding:4px 10px;border-radius:9999px;background:#0d223f;border:1px solid var(--line);color:var(--accent);font-size:12px;letter-spacing:.3px}
+    .tagline{color:var(--muted);margin-top:6px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px;margin-top:16px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:760px){ .grid{grid-template-columns:1fr 1fr} }
+    .label{font-size:12px;text-transform:uppercase;letter-spacing:.25px;color:var(--muted);margin-bottom:6px}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word-break:break-all}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:#0d223f;border:1px solid var(--line)}
+    footer{margin-top:28px;color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- You can replace this IPFS logo with /logo.png if you upload it to the repo -->
+      <img src="https://ipfs.io/ipfs/QmRmfxLstfBgFnRVtvAFA8dwWRwpHAeUwiUtFv3cuTAKMk" alt="RAND logo">
+      <div>
+        <h1>Ayn Rand <span class="ticker">RAND</span></h1>
+        <div class="tagline">Freedom, not force — a community token on Solana.</div>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="label">About</div>
+      <p>
+        <strong>RAND</strong> is a cultural token inspired by Ayn Rand’s philosophy of
+        individual liberty, voluntary exchange, and free markets. Built on Solana:
+        fast, low-cost, and permissionless.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="label">Token Details</div>
+        <div>Symbol: <strong>RAND</strong></div>
+        <div>Network: <strong>Solana</strong></div>
+        <div>Decimals: <strong>6</strong></div>
+        <div>Total Supply: <strong>1,000,000,000 RAND</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="label">Mint Address</div>
+        <div class="mono">6fYTv85WaTrUemAEh56AJ9iPv87yz46UscXRWWhmYviT</div>
+        <div class="btns">
+          <a class="btn" href="https://solscan.io/token/6fYTv85WaTrUemAEh56AJ9iPv87yz46UscXRWWhmYviT" target="_blank" rel="noopener">View on Solscan</a>
+          <a class="btn" href="https://explorer.solana.com/address/6fYTv85WaTrUemAEh56AJ9iPv87yz46UscXRWWhmYviT" target="_blank" rel="noopener">View on Explorer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">How to Buy (once liquidity is live)</div>
+      <ol style="margin:0 0 0 18px;padding:0">
+        <li>Install the Phantom wallet and fund with SOL.</li>
+        <li>Open a DEX aggregator (e.g., <a href="https://jup.ag" target="_blank" rel="noopener">Jupiter</a>).</li>
+        <li>Paste the mint address and swap SOL → RAND.</li>
+      </ol>
+      <p style="margin-top:10px;color:var(--muted)">
+        Note: Trading requires an active liquidity pool (e.g., Raydium/Orca).
+      </p>
+    </div>
+
+    <footer>
+      © <span id="y"></span> RAND • This site is informational only.
+      <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+    </footer>
+  </div>
+</body>
+</html>
